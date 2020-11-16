@@ -50,36 +50,14 @@
 
 .wrapper4 {
   display: grid;
-  grid-template-columns: repeat( 2, 1fr);
-  grid-auto-rows: minmax(100px, 100px);
+  grid-template-areas: "start change"
+                       "graph graph"
 }
 
-.wrapper5 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(100px, 100px);
-}
+.a { grid-area: start; justify-content: center; }
+.b { grid-area: change; justify-content: center;}
+.c { grid-area: graph; justify-content: center; }
 
-.grafica{
-  margin: 1rem 1rem;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-}
-
-.start{
-  margin: 1rem 1rem;
-  grid-column: 1;
-  grid-row: 1;
-  justify-content: center;
-}
-
-.end{
-  margin: 1rem 1rem;
-  grid-column: 2;
-  grid-row: 1;
-  justify-content: center;
-}
 
 .data {
   font-family: 'Carter One';

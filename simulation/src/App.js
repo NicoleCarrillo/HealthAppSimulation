@@ -41,17 +41,16 @@ function App() {
             <InputWeight/>
           </div>
         </div>
-        
         <div className="wrapper4">
-            <div className="start">
+            <div className="a">
             <ButtonStart/>
             </div>
-            <div className="end">
+            <div className="b">
             <ButtonChange/>
           </div>
-        </div>
-        <div className="wrapper5">
+          <div className="c">
             <Graph></Graph>
+        </div>
         </div>
       </div>
     </div>

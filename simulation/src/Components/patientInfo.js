@@ -6,7 +6,7 @@ import {withStyles,makeStyles} from '@material-ui/core/styles';
 const CssTextField = withStyles({
     root: {
       '& label.Mui-focused': {
-        color: '#29a329',
+        color: '#ff0066',
       },
       '& .MuiOutlinedInput-root': {
         '& fieldset': {
@@ -16,7 +16,7 @@ const CssTextField = withStyles({
           borderColor: '#e6b800',
         },
         '&.Mui-focused fieldset': {
-          borderColor: '#29a329',
+          borderColor: '#ff0066',
         },
       },
     },
