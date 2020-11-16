@@ -4,6 +4,7 @@ import InputWeight from "./Components/inputWeight"
 import { FaNutritionix } from "react-icons/fa";
 import ButtonStart from "./Components/buttonStart";
 import ButtonChange from "./Components/buttonChange";
+import Graph from "./Components/graph";
 
 function App() {
   return (
@@ -47,7 +48,10 @@ function App() {
             </div>
             <div className="end">
             <ButtonChange/>
-            </div>
+          </div>
+        </div>
+        <div className="wrapper5">
+            <Graph></Graph>
         </div>
       </div>
     </div>
