@@ -1,7 +1,9 @@
 import './App.css';
 import PatientInfo from "./Components/patientInfo"
+import InputWeight from "./Components/inputWeight"
 import { FaNutritionix } from "react-icons/fa";
-import Button from "./Components/button";
+import ButtonStart from "./Components/buttonStart";
+import ButtonChange from "./Components/buttonChange";
 
 function App() {
   return (
@@ -15,37 +17,37 @@ function App() {
         <div className="wrapper3">
           <div className="wrapperMini">
             <div className="data">Week 1</div>
-            <div className="data">hello2</div>
+            <InputWeight/>
           </div>
           <div className="wrapperMini">
             <div className="data">Week 2</div>
-            <div className="data">hello4</div>
+            <InputWeight/>
           </div>
           <div className="wrapperMini">
             <div className="data">Week 3</div>
-            <div className="data">hello4</div>
+            <InputWeight/>
           </div>
           <div className="wrapperMini">
             <div className="data">Week 4</div>
-            <div className="data">hello4</div>
+            <InputWeight/>
           </div>
           <div className="wrapperMini">
             <div className="data">Week 5</div>
-            <div className="data">hello4</div>
+            <InputWeight/>
           </div>
           <div className="wrapperMini">
             <div className="data">Week 6</div>
-            <div className="data">hello4</div>
+            <InputWeight/>
           </div>
         </div>
+        
         <div className="wrapper4">
-          <div className="wrapper5">
             <div className="start">
-              <Button name="Temperatura"/>
+            <ButtonStart/>
             </div>
-            <div className="end">end</div>
-          </div>
-          <div className="grafica">grafica</div>
+            <div className="end">
+            <ButtonChange/>
+            </div>
         </div>
       </div>
     </div>

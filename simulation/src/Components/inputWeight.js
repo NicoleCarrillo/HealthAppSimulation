@@ -38,14 +38,8 @@ export default function InputAdornments() {
 
   return (
     <div className={classes.root}>
-      <div>
-        <FormControl
-          className={clsx(
-            classes.margin,
-            classes.withoutLabel,
-            classes.textField
-          )}
-        >
+      
+        <FormControl className={clsx( classes.margin,classes.withoutLabel,classes.textField )}>
           <Input
             id="standard-adornment-weight"
             value={values.weight}
@@ -60,7 +54,7 @@ export default function InputAdornments() {
             Weight
           </FormHelperText>
         </FormControl>
-      </div>
+    
     </div>
   );
 }
