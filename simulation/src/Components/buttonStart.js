@@ -2,6 +2,12 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlayCircle } from "react-icons/fa";
+import inputWeight from "../Components/inputWeight"
+import Graph from "../Components/graph";
+
+function prueba(){
+  return (<Graph/>);
+}
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -9,15 +15,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IconLabelButtons() {
+export default function IconLabelButtons(props) {
   const classes = useStyles();
 
   return (
     <div>
-      {/* This Button uses a Font Icon, see the installation instructions in the Icon component docs. */}
+      {}
       <Button
         variant="contained"
         color="primary"
+        onClick={props.onClickShow }
         className={classes.button}
         endIcon={<FaPlayCircle color="#ffffff" />}
       >

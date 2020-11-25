@@ -5,6 +5,23 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import Axios from 'axios';
+
+
+
+
+function i(i){
+  console.log(i);
+  return i;
+}
+
+function e(e){
+  console.log(e);
+}
+
+function a(a){
+  console.log(a);
+}
 
 const CssTextField = withStyles({
     root: {
@@ -46,7 +63,18 @@ const CssTextField = withStyles({
   export default function CustomizedInputs() {
     const classes = useStyles();
     const [age, setAge] = React.useState("");
+    const [height, setHeight] = React.useState("");
+    const [name, setName] = React.useState("");
     const handleChange = (event) => {
+      let i =i(event.target.value);
+      setName(event.target.value);
+    };
+    const handleChange1 = (event) => { 
+      e(event.target.value);
+      setHeight(event.target.value);
+    };
+    const handleChange2 = (event) => {
+      a(event.target.value);
       setAge(event.target.value);
     };
     return (
@@ -57,9 +85,10 @@ const CssTextField = withStyles({
               <Select
                 labelId="demo-simple-select-outlined-label"
                 id="demo-simple-select-outlined"
-                value={age}
+                value={name}
                 onChange={handleChange}
                 label="Patient Name"
+                a={name}
               >
               <MenuItem value="">
                 <em>Patients Name</em>
@@ -77,6 +106,9 @@ const CssTextField = withStyles({
                         id="age"
                         label="Pantient Height"
                         variant="outlined"
+                        value={height}
+                        b={height}
+                        onChange={handleChange1}
                     />
                 </div>
             </form>
@@ -86,7 +118,10 @@ const CssTextField = withStyles({
                         className={classes.margin}
                         id="gender"
                         label="Pantient Age"
-                        variant="outlined"    
+                        variant="outlined" 
+                        value={age}  
+                        c={age}    
+                        onChange={handleChange2}
                     />
                 </div>
             </form>

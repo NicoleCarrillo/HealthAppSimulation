@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IconLabelButtons() {
+export default function IconLabelButtons(props) {
   const classes = useStyles();
 
   return (
@@ -17,6 +17,7 @@ export default function IconLabelButtons() {
       <Button
         variant="contained"
         color="secondary"
+        onClick={props.onClickHide}
         className={classes.button}
         endIcon={<FaStopCircle color="#ffffff" />}
       >

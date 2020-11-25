@@ -57,6 +57,7 @@ export default function InputAdornments(props) {
             id="standard-adornment-weight"
             value={values.weight}
             a={seta(values.weight)}
+            b={geta()}
             onChange={handleChange("weight")}
             endAdornment={<InputAdornment position="end">Kg</InputAdornment>}
             aria-describedby="standard-weight-helper-text"

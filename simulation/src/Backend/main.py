@@ -4,8 +4,7 @@ import inputLoader as il
 import login
 import json
 
-app = Flask(__name__)
-
+app =  Flask(__name__, static_folder="simulation/public", template_folder="simulation/public")
 
 @app.route('/')
 def index():
@@ -14,15 +13,16 @@ def index():
 @app.route('/login',methods=['POST'])
 def log_in():
 	if request.method=='POST':
-		username=request.json['username']
-		if login.login(username,""):
-			data = il.loadData(username)
-			print(data)
-			return json.dumps({"result": True,"data" : data})
-		elif login.addUser(username,""):
-			return json.dumps({"result": True, "data" : None})
-		else:
-			return json.dumps({"result": False, "data" : None})
+		return "nicole"
+		#username=request.json['username']
+		#if login.login(username,""):
+		#	data = il.loadData(username)
+		#	print(data)
+		#	return json.dumps({"result": True,"data" : data})
+		#elif login.addUser(username,""):
+		#	return json.dumps({"result": True, "data" : None})
+		#else:
+		#	return json.dumps({"result": False, "data" : None})
 
 @app.route('/predict',methods=['POST'])
 def predict():
