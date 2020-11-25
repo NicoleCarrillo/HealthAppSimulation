@@ -21,7 +21,7 @@ export default function IconLabelButtons() {
         className={classes.button}
         endIcon={<FaPlayCircle color="#ffffff" />}
       >
-        Start
+        Start Prediction
       </Button>
      
     </div>

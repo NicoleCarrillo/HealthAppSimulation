@@ -6,7 +6,7 @@ import {
 
 const data = [
   {
-    name: 'Week 1', diet: 1, kg: 50, 
+    name: 'Week 1', diet: 100, kg: 50, 
   },
   {
     name: 'Week 2', diet: 0, kg: 52, 
@@ -15,13 +15,57 @@ const data = [
     name: 'Week 3', diet: 0, kg: 51, 
   },
   {
-    name: 'Week 4', diet: 1, kg: 50, 
+    name: 'Week 4', diet: 100, kg: 50, 
   },
   {
-    name: 'Week 5', diet: 1, kg: 50, 
+    name: 'Week 5', diet: 100, kg: 50, 
   },
   {
-    name: 'Week 6', diet: 1, kg: 49, 
+    name: 'Week 6', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 7', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 8', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 9', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 10', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 11', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 12', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 13', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 14', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 15', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 16', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 17', diet: 100, kg: 49, 
+  },
+  {
+    name: 'Week 18', diet: 0, kg: 49, 
+  },
+
+  {
+    name: 'Week 19', diet: 0, kg: 49, 
+  },
+
+  {
+    name: 'Week 20', diet: 100, kg: 49, 
   },
 ];
 
@@ -39,7 +83,7 @@ export default class Example extends PureComponent {
         }}
       >
         <CartesianGrid stroke="#f5f5f5" />
-        <XAxis dataKey="name" label={{ value: 'Time', position: 'insideBottomRight', offset: 0 }} />
+        <XAxis dataKey="name" label={{ value: '', position: 'insideBottomRight', offset: 0 }} />
         <YAxis label={{ value: 'Weight', angle: -90, position: 'insideLeft' }} />
         <Tooltip />
         <Legend />

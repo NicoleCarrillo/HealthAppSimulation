@@ -20,7 +20,7 @@ export default function IconLabelButtons() {
         className={classes.button}
         endIcon={<FaStopCircle color="#ffffff" />}
       >
-        Change
+        New Patient
       </Button>
     </div>
   );

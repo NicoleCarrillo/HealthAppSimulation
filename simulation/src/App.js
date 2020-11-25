@@ -3,7 +3,7 @@ import PatientInfo from "./Components/patientInfo"
 import InputWeight from "./Components/inputWeight"
 import { FaNutritionix } from "react-icons/fa";
 import ButtonStart from "./Components/buttonStart";
-import ButtonChange from "./Components/buttonChange";
+import ButtonExit from "./Components/buttonExit";
 import Graph from "./Components/graph";
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
             <ButtonStart/>
             </div>
             <div className="b">
-            <ButtonChange/>
+            <ButtonExit/>
           </div>
           <div className="c">
             <Graph></Graph>
